@@ -1,28 +1,32 @@
-body {
-  font-family: 'Lato', sans-serif;
-}
 .container {
   width: 1110px;
   margin: auto;
 }
-intro {
-  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),url('/Cloudbudget/images/intro-bg.jpg');
+.intro {
+  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('/Cloudbudget/images/intro-bg.jpg');
+  padding-bottom: 187px;
+  background-size: cover;
 }
-
+.logo {
+  width: 172px;
+  height: 29px;
+  display: inline-block;
+} 
+.nav-list {
+  display: flex;
+}
 .heading {
   font-weight: bold;
   font-size: 72px;
   line-height: 86px;
   text-transform: uppercase;
 }
-
 .title {
   font-family: Lato;
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
 }
-
 .subtitle {
   font-family: Lato;
   font-style: normal;
@@ -30,7 +34,6 @@ intro {
   font-size: 18px;
   line-height: 22px;
 }
-
 .plain_text {
   font-family: Lato;
   font-style: normal;
