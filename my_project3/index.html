@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="краткое описание страницы">
+  <style>
+    form {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    label,
+    input {
+      display: block;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <form>
+    <span>Форма регистрации</span>
+    <fieldset>
+      <legend>Основная информация</legend>
+      <label>
+        Имя *
+        <input name="user_first_name" type="text" placeholder="Введите ваше имя" required>
+      </label>
+      <label>
+        Фамилия *
+        <input name="user_last_name" type="text" placeholder="Введите вашу фамилию" required>
+      </label>
+      <label>
+        Nickname *
+        <input name="user_nickname" type="text" placeholder="Введите ваш Nickname" required>
+      </label>
+      <label>
+        Ваша дата рождения *
+        <input name="user_bd" type="date" required>
+      </label>
+      <label>
+        Ваше время рождения *
+        <input name="user_bt" type="time" required>
+      </label>
+      <label>
+        Ваш город *
+        <input list="city">
+        <datalist id="city">
+          <option value="Одесса"></option>
+          <option value="Киев"></option>
+          <option value="Николаев"></option>
+          <option value="Херсон"></option>
+          <option value="Львов"></option>
+          <option value="Днепр"></option>
+          <option value="Полтава"></option>
+          <option value="Запорожье"></option>
+          <option value="Чернигов"></option>
+          <option value="Кривой рог"></option>
+          <option value="Винница"></option>
+          <option value="Харьков"></option>
+        </datalist>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Почта и пароль</legend>
+      <label>
+        Email *
+        <input name=Email type="text" required placeholder="введите ваш email">
+      </label>
+      <label>
+        Запасной Email *
+        <input name=Email2 type="text" required placeholder="введите ваш email">
+      </label>
+      <label>
+        Пароль *
+        <input name=Password type="password" required placeholder="введите ваш пароль">
+      </label>
+      <label>
+        Подтвердить пароль *
+        <input name=Passwordsub type="password" required placeholder="введите ваш пароль">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Контактная информация</legend>
+      <label>
+        Телефон*
+        <input name="Telephone" type="text" required placeholder="введите ваш телефон">
+      </label>
+      <label>
+        Дополнительный телефон
+        <input name="Telephone2" type="text" placeholder="введите ваш телефон">
+      </label>
+      <label>
+        Skype
+        <input name="Skype" type="text" placeholder="введите ваш skype">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Уровень навыков</legend>
+      <label>
+        HTML
+        <input name="Html" type="range" min="30" max="100">
+      </label>
+      <label>
+        CSS
+        <input name="CSS" type="range" min="50" max="100">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>О себе</legend>
+      <label>
+        Расскажите о себе
+        <textarea name="about" id="about" cols="30" rows="10" required placeholder="Введите текст"></textarea>
+      </label>
+      <label>
+        <br>
+        <input type="radio" name="gender"> Мужской
+        <input type="radio" name="gender"> Женский
+        <input type="radio" name="gender"> Другое
+      </label>
+      <label>
+        <br>
+        Ваш любимый цвет
+        <input type="color" name="color">
+      </label>
+      <label>
+        <br>
+        Вид занятости
+        <input type="radio" name="worktime"> Работаю full time
+        <input type="radio" name="worktime"> Работаю part time
+        <input type="radio" name="worktime"> Freelance
+        <input type="radio" name="worktime"> Временно не работаю
+        <input type="radio" name="worktime"> Студент
+      </label>
+      <label>
+        <br>
+        Наличие домашних животных
+        <input type="checkbox" name="pet"> Котик
+        <input type="checkbox" name="pet"> Собачка
+        <input type="checkbox" name="pet"> Птичка
+        <input type="checkbox" name="pet"> Рыбка
+        <input type="checkbox" name="pet"> Другое
+      </label>
+      <label>
+        <br>
+        Добавить файл
+        <input type="file">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Изучаемое направление</legend>
+      <label>
+        <select name="user_city">
+          <option value="id43543543">Front-End</option>
+          <option value="id45435435">Back-end</option>
+          <option value="id45345432">Python</option>
+          <option value="id95878463">React</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+  </form>
+
+  <script src='https://febasic.github.io/js/form.js'></script>
+</body>
+
+</html>

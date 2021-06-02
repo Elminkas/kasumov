@@ -1,0 +1,29 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.heading {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: uppercase;
+}
+.title {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+}
+.subtitle {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.plain_text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
