@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link rel="stylesheet" href="./css/lol.css">
+  <link rel="stylesheet" href="./icomoon/style.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -89,8 +90,8 @@
           <div class="col col-5">
             <video class="video_cb" src="https://febasic.github.io/media/video.mp4" muted loop
               poster="./images/Video_bg.jpg"></video>
-            <!-- <button class="b_play_video"></button>
-            <img src="./images/PlaySolid.svg" alt="" class="bp_video"> -->
+            <button class="play-button" aria-label="play_video"></button>
+            <img src="./images/PlaySolid.svg" alt="" class="bp_video">
           </div>
         </div>
       </div>
@@ -142,38 +143,38 @@
         <h2 class="title text-center">Technology</h2>
         <div class="row">
           <ul class="t-list">
-            <li class="t-card">
+            <div class="col col-3">
               <div class="t-number">01</div>
-              <img src="images/icon-1.svg" alt="" class="t-icon">
+              <li class="t-icon"><a href="#" class="t-icon"><span class="t-icon icon-icon-1"></span></a></li>
               <h3 class="t-title">Cloud Storage</h3>
               <p class="t-description">
                 Access your account from anywhere in the world on any device
               </p>
-            </li>
-            <li class="t-card">
+            </div>
+            <div class="col col-3">
               <div class="t-number">02</div>
-              <img src="images/icon-2.svg" alt="" class="t-icon secure">
+              <li class="t-icon"><a href="#" class="t-icon"><span class="t-icon icon-icon-2"></span></a></li>
               <h3 class="t-title">Secure</h3>
               <p class="t-description">
                 All your information is stored on secure cloud servers
               </p>
-            </li>
-            <li class="t-card">
+            </div>
+            <div class="col col-3">
               <div class="t-number">03</div>
-              <img src="images/icon-3.svg" alt="" class="t-icon pdf">
+              <li class="t-icon"><a href="#" class="t-icon"><span class="t-icon icon-icon-3"></span></a></li>
               <h3 class="t-title">PDF Download</h3>
               <p class="t-description">
                 Download any of your reports in PDF format
               </p>
-            </li>
-            <li class="t-card">
+            </div>
+            <div class="col col-3">
               <div class="t-number">04</div>
-              <img src="images/icon-4.svg" alt="" class="t-icon csv">
+              <li class="t-icon"><a href="#" class="t-icon"><span class="t-icon icon-icon-4"></span></a></li>
               <h3 class="t-title">CSV Download</h3>
               <p class="t-description">
                 All your information is stored on secure cloud servers
               </p>
-            </li>
+            </div>
           </ul>
           <section class="map-section">
             <div class="container">
@@ -191,6 +192,16 @@
                       spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get
                       started!
                     </p>
+                    <div class="col col-4">
+                      <ul class="map-links">
+                        <li class="map-links-item"><a href="#" class="map-links-item-link"><span
+                              class="map-links-icon icon-playstore"></span></a></li>
+                        <li class="map-links-item"><a href="#" class="map-links-item-link"><span
+                              class="map-links-icon icon-appstore"></span></a></li>
+                        <li class="map-links-item"><a href="#" class="map-links-item-link"><span
+                              class="map-links-icon icon-windows"></span></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </span>
                 <iframe class="iframe_map"
@@ -201,7 +212,6 @@
           </section>
         </div>
       </div>
-
       <section class="contact-section">
         <div class="container">
           <div class="row">
@@ -218,20 +228,22 @@
             <div class="col col-6">
               <form>
                 <div class="row">
-                  <div class="col col-6">
+                  <div class="col col-3 offset-1">
                     <input class="main-input" type="text" name="user_first_name" placeholder="First Name" required>
-                  </div>
-                  <div class="col col-6">
                     <input class="main-input" type="text" name="user_last_name" placeholder="Last Name" required>
                   </div>
-                  <input class="main-input" type="tel" name="user_phone" placeholder="Phone Number" required>
-                  <select class="main-select" name="Service">
-                    <option>Select Service</option>
-                    <option>Select Service</option>
-                    <option>Select Service</option>
-                    <option>Select Service</option>
-                  </select>
-                  <button class="btn-accent" type="submit">Submit Now</button>
+                </div>
+                <div class="row">
+                  <div class="col col-6 offset-1">
+                    <input class="main-input" type="tel" name="user_phone" placeholder="Phone Number" required>
+                    <select class="main-select" name="Service">
+                      <option>Select Service</option>
+                      <option>Select Service</option>
+                      <option>Select Service</option>
+                      <option>Select Service</option>
+                    </select>
+                    <button class="btn-accent" type="submit">Submit Now</button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -252,31 +264,34 @@
           <div class=" col col-2">
             <h3 class="Services">Services</h3>
             <ul class="li">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Technology</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privecy</a></li>
+              <li class="service-links-item"><a href="#" class="service-links-item-link">Overview</a></li>
+              <li class="service-links-item"><a href="#" class="service-links-item-link">Features</a></li>
+              <li class="service-links-item"><a href="#" class="service-links-item-link">Technology</a></li>
+              <li class="service-links-item"><a href="#" class="service-links-item-link">Terms & Conditions</a></li>
+              <li class="service-links-item"><a href="#" class="service-links-item-link">Privecy</a></li>
             </ul>
           </div>
           <div class="col col-2">
             <h3 class="Get_in_touch">Get in Touch</h3>
             <ul class="li2">
-              <a href='info@cloudbudget.com'>info@cloudbudget.com</a>
+              <a href='info@cloudbudget.com' class="service-links-item-link">info@cloudbudget.com</a>
               <br>
-              <a href='tel:+18447217120'>+1 844-721-7120</a>
+              <a href='tel:+18447217120' class="service-links-item-link">+1 844-721-7120</a>
             </ul>
-            <ul>
-              <li><img src="./images/feather-facebook.png" alt=""></li>
-              <li><img src="./images/feather-linkedin.png" alt=""></li>
-              <li><img src="./images/feather-twitter.png" alt=""></li>
+            <ul class="social-links">
+              <li class="social-links-item"><a href="#" class="social-links-item-link"><span
+                    class="social-links-icon icon-facebook"></span></a></li>
+              <li class="social-links-item"><a href="#" class="social-links-item-link"><span
+                    class="social-links-icon icon-twitter"></span></a></li>
+              <li class="social-links-item"><a href="#" class="social-links-item-link"><span
+                    class="social-links-icon icon-linkedin2"></span></a></li>
             </ul>
           </div>
           <div class="col col-3">
             <h3 class="We_support">We Support</h3>
             <img class="wesp" src="./images/secure-p-1_1.png" alt="secure-p-1">
-            <p class="copyrights">Copyright 2020 CloudBudget</p>
           </div>
+          <p class="copyrights">Copyright 2020 CloudBudget</p>
         </div>
       </div>
     </section>
