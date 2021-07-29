@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  min-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-6 {
+  flex-basis: 50%;
+}
+.col-4 {
+  width: 33.33333%;
+}
+.page-nav-list {
+  display: flex;
+}
+.page-nav-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4f5665;
+  text-decoration: none;
+  padding: 12px 20px;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-button {
+  display: inline-block;
+  padding: 12px 50px;
+  border: 1px solid #f53855;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f53855;
+  font-weight: 500;
+}
+.main-button--alt {
+  color: #0b132a;
+  border: none;
+}
+.page-header {
+  padding-bottom: 46px;
+  padding-top: 46px;
+}
+.align-items-center {
+  align-items: center;
+}
