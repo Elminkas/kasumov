@@ -1,14 +1,15 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('./icomoon.woff?lvghcb') format('woff') ;
+  font-family: "icomoon";
+  src: url("icomoon.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -29,4 +30,7 @@
 }
 .icon-user:before {
   content: "\e902";
+}
+.icon-checkmark:before {
+  content: "\ea10";
 }
