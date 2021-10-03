@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Gilroy", sans-serif;
 }
 img {
   max-width: 100%;
@@ -35,6 +35,22 @@ a {
 }
 .padding-top {
   padding-top: 75px;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url(Gilroy-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url(Gilroy-Bold.ttf) format("ttf");
 }
 .container {
   padding-left: 15px;
@@ -106,6 +122,8 @@ a {
 .main-title {
   font-size: 32px;
   line-height: 1.2;
+  font-style: normal;
+  font-weight: 700;
 }
 .main-btn {
   padding: 16px 23px;
@@ -135,6 +153,8 @@ a {
   font-size: 32px;
   line-height: 1.2;
   color: #000000;
+  font-style: normal;
+  font-weight: 400;
 }
 @media (min-width: 576) {
   .main-title {
@@ -175,6 +195,8 @@ a {
   line-height: 38px;
   text-align: center;
   color: #000000;
+  font-style: normal;
+  font-weight: 400;
 }
 .simple-text {
   font-size: 18px;
@@ -234,20 +256,4 @@ a {
   justify-content: space-between;
   min-height: 166px;
   padding: 24px;
-}
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Gilroy Regular"), local("Gilroy-Regular"),
-    url(Gilroy-Regular.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Gilroy Bold"), local("Gilroy-Bold"),
-    url(Gilroy-Bold.woff2) format("woff2");
 }
