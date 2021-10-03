@@ -235,3 +235,19 @@ a {
   min-height: 166px;
   padding: 24px;
 }
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url(Gilroy-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url(Gilroy-Bold.woff2) format("woff2");
+}
