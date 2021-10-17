@@ -134,4 +134,14 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav {
+  font-size: 12px;
+}
 /*# sourceMappingURL=main.css.map */
