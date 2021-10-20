@@ -231,6 +231,10 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 }
 .our-brands {
   flex-wrap: wrap;
@@ -246,4 +250,9 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+.watch-img {
+  width: 185px;
+  height: 251px;
+  margin-right: -9px;
 }
