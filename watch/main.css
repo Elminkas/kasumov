@@ -235,7 +235,12 @@ header {
   flex-direction: column;
 }
 .card-watch {
-  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./image/back-watch.png);
+  width: 185px;
+  height: 251px;
 }
 .price-text {
   font-family: Playfair Display;
@@ -266,7 +271,6 @@ header {
 .our-brands {
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 320px;
 }
 .our-brands-text {
   font-family: Playfair Display;
@@ -279,9 +283,9 @@ header {
   color: #ffffff;
 }
 .watch-img {
-  width: 185px;
-  height: 251px;
-  margin-right: -9px;
+  /* width: 185px; */
+  /* height: 251px; */
+  /* margin-right: -9px; */
 }
 .footer-section {
   background: url(./image/footer-img.jpg), #c4c4c4;
