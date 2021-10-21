@@ -21,7 +21,7 @@
 <header class="page-header">
   <section class="">
     <span>
-      <div class="col col-7 offset-2 phone d-flex justify-content-sm-between">
+      <div class="col col-7 offset-2 phone d-flex justify-content-sm-between flex-wrap">
         <a href="tel:+88121234567" class="tel-text bi-telephone">8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 —
           18:00 </a>
         <a href="#" class="text-decoration-none tel-text">
@@ -54,11 +54,9 @@
             <a class="nav-link active bg-dark nav-link-items" aria-current="page" href="#">Понравилось</a>
             <a class="nav-link nav-link-items" href="#">личный кабинет</a>
             <a class="nav-link nav-link-items" href="#">настройки</a>
-            <a class="nav-link nav-link-items">
-              <img src="./image/bx_bx-cart.svg" alt="">
+            <a class="nav-link nav-link-items bi-cart" href="#">
             </a>
-            <a class="nav-link nav-link-items">
-              <img src="./image/search.svg" alt="">
+            <a class="nav-link nav-link-items bi-search" href="#">
             </a>
           </div>
         </div>
@@ -88,7 +86,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="seasson col-lg-5">
-          <h1 class="watch-text">СЕЗОН 2020/21</h1>
+          <h1 class="secondary-title-text">СЕЗОН 2020/21</h1>
           <p class="line2"></p>
         </div>
         <div class="d-flex flex-wrap col-lg-12">
@@ -124,8 +122,8 @@
               </div>
             </div>
           </div>
-          <div class="catalog col-lg-6">
-            <h2 class="catalog-text">Новая коллекция</h2>
+          <div class="catalog col-lg-5">
+            <h2 class="secondary-title-text">Новая коллекция</h2>
             <p class="line2"></p>
             <div class="">
               <select class="form-select collection-select" aria-label="Default select example">
@@ -140,7 +138,7 @@
       </div>
     </div>
   </section>
-  <section class="col-lg-12 bg-black padding">
+  <section class="col-lg-12 bg-black padding ">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 d-flex flex-wrap">
@@ -148,9 +146,10 @@
         </div>
         <div class="col-lg-6 d-flex flex-wrap">
           <div class="new-colection">
-            <h2 class="catalog-text">коллекция 2018</h2>
+            <h2 class="secondary-title-text fw-normal">коллекция 2018</h2>
             <p class="line2"></p>
-            <p class="catalog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis
+            <p class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut
+              mattis
               habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed
               scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi
               habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean
@@ -287,6 +286,79 @@
       </div>
     </div>
   </section>
+</body>
+<footer class="footer">
+  <section class="footer-section d-flex flex-wrap">
+    <div class="container d-flex flex-wrap margin-footer">
+      <div class="row">
+        <div class="d-flex col-lg-12 flex-wrap">
+          <div class="col-lg-4">
+            <h2 class="footer-h2">коллекция 2018</h2>
+            <p class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc
+              cursus
+              tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis
+              eget
+              consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra
+              leo.
+              Et ipsum urna fames in sit mi ultrices nisi, nunc.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-links text-decoration-none d-flex">
+              <h2 class="footer-h2">Категории</h2>
+              <span class="">
+                <li class="footer-links-item">
+                  <a href="" class="footer-links">
+                    часы
+                  </a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="footer-links">
+                    браслеты
+                  </a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="footer-links">
+                    ремни
+                  </a>
+                </li>
+              </span>
+              <span class="">
+                <li class="footer-links-item">
+                  <a href="" class="footer-links">
+                    ювелирные изделия
+                  </a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="footer-links">
+                    запонки
+                  </a>
+                </li>
+              </span>
+            </ul>
+          </div>
+          <div class="col-lg-4 d-flex flex-wrap">
+            <h2 class="footer-h2">
+              Рассылка
+            </h2>
+            <p class="secondary-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc
+              nulla nibh.
+            </p>
+            <input class="input-email" type="email" id="email" pattern=".+@globex\.com" size="30" required
+              placeholder="Ваша почта">
+            <button class="footer-button text-uppercase">Подписаться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-black">
+    <div class="rights">
+      © 2020 Все права защищены
+    </div>
+  </section>
+</footer>
 </body>
 
 </html>

@@ -118,6 +118,25 @@ header {
   text-transform: uppercase;
   color: #ffffff;
 }
+.secondary-text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.secondary-title-text {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 80px;
+}
 .watch-card {
   position: relative;
   display: flex;
@@ -244,7 +263,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-}
 .our-brands {
   flex-wrap: wrap;
   justify-content: center;
@@ -264,4 +282,78 @@ header {
   width: 185px;
   height: 251px;
   margin-right: -9px;
+}
+.footer-section {
+  background: url(./image/footer-img.jpg), #c4c4c4;
+}
+.footer-h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.footer-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0f0f0f;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.input-email {
+  background: rgba(255, 255, 255, 0.4);
+}
+::placeholder {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #d0d0d0;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #d0d0d0;
+}
+.footer-links-item {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0f0f0f;
+  margin: 1rem;
+}
+.footer-link {
+  display: flex;
+}
+.margin-footer {
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+.rights {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #d0d0d0;
+  height: 50px;
+  padding-top: 17px;
 }
