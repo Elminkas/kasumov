@@ -68,7 +68,7 @@ header {
   height: 80px;
 }
 .main-section {
-  background: url(/watch/image/main_background.jpg);
+  background: url(./image/header-back.jpg);
   background-size: cover;
   background-position: center center;
   min-width: 320px;
