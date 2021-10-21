@@ -34,6 +34,10 @@ button {
 a {
   text-decoration: none;
 }
+.nav-link:active {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
 .tel-text {
   font-family: PT Sans;
   font-style: normal;
@@ -47,7 +51,6 @@ a {
   font-weight: bold;
   font-size: 36px;
   line-height: 54px;
-
   color: #ffffff;
 }
 header {
@@ -282,11 +285,6 @@ header {
   text-transform: uppercase;
   color: #ffffff;
 }
-.watch-img {
-  /* width: 185px; */
-  /* height: 251px; */
-  /* margin-right: -9px; */
-}
 .footer-section {
   background: url(./image/footer-img.jpg), #c4c4c4;
 }
@@ -317,6 +315,10 @@ header {
 .input-email {
   background: rgba(255, 255, 255, 0.4);
 }
+.footer-button:hover {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
 ::placeholder {
   font-family: PT Sans;
   font-style: normal;
@@ -337,6 +339,10 @@ header {
   font-size: 14px;
   line-height: 150%;
   color: #d0d0d0;
+}
+.footer-links-item:hover {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 .footer-links-item {
   display: inline-block;
