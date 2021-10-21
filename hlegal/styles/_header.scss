@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  .nav {
+    font-size: 12px;
+  }
+}
+
+$device: tablet;
+
+.title {
+  @if $device == mobile {
+    font-size: 16px;
+  } @else if @device == tablet {
+    font-size: 18px;
+  } @else {
+    font-size: 12px;
+  }
+}
+
+.animated-item {
+  animation: rotate 1s;
+}
