@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Homework</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Homework</title>
+  <link rel="stylesheet" href="/simple-adaptive-slider/simple-adaptive-slider.css">
+  <script defer src="/simple-adaptive-slider/simple-adaptive-slider.js"></script>
 </head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // инициализация 1 слайдера с нужными настройками
+    new SimpleAdaptiveSlider('#slider-1', {
+      loop: true,
+      autoplay: false,
+      interval: 5000,
+      swipe: true,
+    });
+    // инициализация 2 слайдера с нужными настройками
+    new SimpleAdaptiveSlider('#slider-2', {
+      loop: true,
+      autoplay: false,
+      interval: 5000,
+      swipe: true,
+    });
+    new SimpleAdaptiveSlider('#slider-3', {
+      loop: true,
+      autoplay: false,
+      interval: 5000,
+      swipe: true,
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // инициализация слайдера
+    var slider = new SimpleAdaptiveSlider('.slider');
+    // назначим обработчик при нажатии на кнопку .btn-prev
+    document.querySelector('.btn-prev').onclick = function () {
+      // перейдём к предыдущему слайду
+      slider.prev();
+    }
+    // назначим обработчик при нажатии на кнопку .btn-next
+    document.querySelector('.btn-next').onclick = function () {
+      // перейдём к следующему слайду
+      slider.next();
+    }
+  });
+</script>
+<style>
+  /* стили для элемента body */
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  }
+
+  /* дополнительные стили для этого примера */
+  .slider__items {
+    counter-reset: slide;
+  }
+
+  .slider__item {
+    counter-increment: slide;
+  }
+
+  .slider__item>div::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+  }
+</style>
+
 <body>
-	
+  <div class="slider" id="slider-2">
+    <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <img src="./image/coco-fine.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="./image/coco-fine.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="./image/coco-fine.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="./image/coco-fine.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+  </div>
 </body>
+<nav id="menu">
+  <header>
+    <h2>Menu</h2>
+  </header>
+</nav>
+
+<main id="panel">
+  <header>
+    <h2>Panel</h2>
+  </header>
+</main>
+
 </html>
